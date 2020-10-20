@@ -72,4 +72,9 @@ module.exports = env => ({
     new FriendlyErrorsWebpackPlugin(),
     new WebpackBar(),
   ],
+  devServer: {
+    port: 4444,
+    open: true,
+    stats: 'errors-only',
+  },
 });
